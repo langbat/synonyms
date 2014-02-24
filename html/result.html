@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Sinónimo.es - Tesauro en español</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/prettyCheckable.js"></script> 
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js" type="text/javascript"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Header -->
+            <header >
+                <div class="header">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="title_header">Sinónimo.es - <em>Tesauro en español</em></div>
+                            <ul id="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>  
+            <section class="clearfix">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="logo">
+                                    <a href="#"><img src="images/logo.png" alt=""/></a>
+                                    <p>Diccionario de sinónimos online con más de 20.000 palabras</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid wrap_content">  
+                            <div class="content">
+                                <div class="content_search">
+                                    <ul class="nav nav-tabs" id="myTab">
+                                        <li class="active"><a href="#home">sinónimo</a></li>
+                                        <li><a href="#profile">definición</a></li>
+                                        <li><a href="#messages">antónimos</a></li> 
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="home"> 
+                                            <form class="form-search">
+                                                <input type="text" class="input-large search-query" value="" placeholder="buscar"/>
+                                                <button type="submit" class="btn btn-search">Search</button>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="profile">
+                                            <form class="form-search">
+                                                <input type="text" class="input-large search-query" value="" placeholder="definición"/>
+                                                <button type="submit" class="btn btn-search">Search</button>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="messages">
+                                            <form class="form-search">
+                                                <input type="text" class="input-large search-query" value="" placeholder="antónimos"/>
+                                                <button type="submit" class="btn btn-search">Search</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_checkbox"><input type="checkbox"> Que la contenga</div>
+
+                                    <script>
+                                        $(function() {
+                                            $('#myTab a:first').tab('show');
+                                            $('#myTab a').click(function(e) {
+                                                e.preventDefault();
+                                                $(this).tab('show');
+                                            });
+                                            $('input[type=checkbox]').prettyCheckable({
+                                                color: 'blue'
+                                            });
+                                        });
+
+                                    </script>
+                                    <div class="result">
+                                        <h1>Sinónimos: </h1>
+                                        <div class="item">
+                                            <p>bufete, buró, mesa, escritorio, pupitre, despacho, oficina</p>
+                                            <span class="close"></span>
+                                        </div> 
+                                        <div class="item">
+                                            <p>banco, mesa, asiento, cárcel, sotabanco, faja, tira, porción, parcialidad, bandada, lado, costado, banquillo </p>
+                                            <span class="close"></span>
+                                        </div>
+
+                                        <button class="btn btn-large btn-primary" type="button">Suggest synonym</button>
+                                        <button class="btn btn-large btn-warning" type="button">Report a Fail</button>
+                                    </div>
+
+                                </div> 
+                            </div> 
+                            <div class="banner"><a href="#"><img src="images/baner.png" alt=""/></a></div>
+                            <div class="link_bottom"><a href="#">Lista de Palabras</a></div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!-- End mainContent -->
+
+            <!--- Footer --->
+            <footer class="clearfix">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <p>Copyright © sinónimo.es 2013. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div><!--end wrapper -->
+    </body>
+</html>
